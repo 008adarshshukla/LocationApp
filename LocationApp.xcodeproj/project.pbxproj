@@ -13,6 +13,7 @@
 		02DB6BC029F3FCD400FDFBC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DB6BBE29F3FCD400FDFBC5 /* Main.storyboard */; };
 		02DB6BC229F3FCD700FDFBC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02DB6BC129F3FCD700FDFBC5 /* Assets.xcassets */; };
 		02DB6BC529F3FCD700FDFBC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DB6BC329F3FCD700FDFBC5 /* LaunchScreen.storyboard */; };
+		02DB6BCE29F3FE2300FDFBC5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DB6BCD29F3FE2300FDFBC5 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		02DB6BC129F3FCD700FDFBC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02DB6BC429F3FCD700FDFBC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02DB6BC629F3FCD700FDFBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02DB6BCD29F3FE2300FDFBC5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		02DB6BB729F3FCD400FDFBC5 /* LocationApp */ = {
 			isa = PBXGroup;
 			children = (
+				02DB6BCC29F3FE0000FDFBC5 /* Managers */,
 				02DB6BB829F3FCD400FDFBC5 /* AppDelegate.swift */,
 				02DB6BBA29F3FCD400FDFBC5 /* SceneDelegate.swift */,
 				02DB6BBC29F3FCD400FDFBC5 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				02DB6BC629F3FCD700FDFBC5 /* Info.plist */,
 			);
 			path = LocationApp;
+			sourceTree = "<group>";
+		};
+		02DB6BCC29F3FE0000FDFBC5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				02DB6BCD29F3FE2300FDFBC5 /* LocationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02DB6BCE29F3FE2300FDFBC5 /* LocationManager.swift in Sources */,
 				02DB6BBD29F3FCD400FDFBC5 /* ViewController.swift in Sources */,
 				02DB6BB929F3FCD400FDFBC5 /* AppDelegate.swift in Sources */,
 				02DB6BBB29F3FCD400FDFBC5 /* SceneDelegate.swift in Sources */,
@@ -290,6 +302,7 @@
 				DEVELOPMENT_TEAM = 2P5TPA6QV8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LocationApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow \"LocationApp\" to access your location?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +331,7 @@
 				DEVELOPMENT_TEAM = 2P5TPA6QV8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LocationApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Allow \"LocationApp\" to access your location?";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
